@@ -34,10 +34,10 @@ void ElementDimension::setup(TrackDimension & _usedTrackDimension, int _index)
 
 {
     trackDimension  = &_usedTrackDimension;
-    setupPosition(_index);
+    
    
     trackDimension->offset.addListener(this, &ElementDimension::updatePosition);
-    
+    setupPosition(_index);
     
 }
 
